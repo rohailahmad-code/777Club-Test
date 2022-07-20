@@ -7,7 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: GilroyLight;
+  src: url(./fonts/Gilroy-Light.otf);
+}
+
+@font-face {
+  font-family: GilroyBold;
+  src: url(./fonts/Gilroy-ExtraBold.otf);
+}
+
+#root {
+  font-family: GilroyLight;
 }
