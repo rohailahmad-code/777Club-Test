@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const About = () => {
   return (
-    <Container>
+    <Container id='About'>
         <Wrapper>
         
             <Banner src="/images/Group 142.png" />
@@ -36,24 +36,40 @@ const Container = styled.main`
     background: url("/images/Group 184.png") center / cover no-repeat;
     z-index: -1;
 
-    `
+    @media (max-width: 1024px) {
+        padding: 50px 50px 0;
+    }
+    @media (max-width: 968px) {
+        padding: 50px 0px 0;
+    }
+`
     
 const Wrapper = styled.div`
     display: flex;
     align-items: center;
 
+    @media (max-width: 968px) {
+        flex-direction: column;
+    }
 `
 
 const Banner = styled.img`
     width: 35%;
     height: 300px;
     object-fit: contain;
+
+    @media (max-width: 968px) {
+        width: 80%;
+        margin-top: 50px;
+    }
 `
 
 const Content = styled.div`
     width: 35%;
     color: white;
-    margin-left: 30px;
+    margin-left: 50px;
+
+    
 
     h2 {
         font-size: 42px;
@@ -81,5 +97,29 @@ const Content = styled.div`
             opacity: 1;
             cursor: pointer;
         }
+    }
+
+    @media (max-width: 968px) {
+        width: 80%;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            text-align: center;
+        }
+        button{
+            margin-bottom: 100px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        a {
+            button {
+                font-size: 16px;
+            }
+        }
+    }
 
 `

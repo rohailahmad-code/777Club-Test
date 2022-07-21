@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Roadmap = () => {
   return (
-    <Container>
+    <Container id='RoadMap'>
         <RoadmapCircles>
             <RoadmapSphere>
                 <img className='circle' src="/images/Group 178.svg" alt="" />
@@ -68,6 +68,10 @@ const RoadmapCircles = styled.div`
     align-items: center;
     flex-direction: column;
     position: relative;
+
+    @media (max-width: 768px) {
+
+    }
     
 `
 const RoadmapSphere = styled.div`
@@ -102,6 +106,26 @@ const RoadmapSphere = styled.div`
         -ms-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
         z-index: -1;
+    }
+
+    @media (max-width: 1024px) {
+        img {
+            width: 250px;
+            height: 250px
+            z-index: 100;
+        }
+    }
+
+    @media (max-width: 968px) {
+        img {
+            width: 220px;
+            height: 220px
+            z-index: 100;
+        }
+        &:before {
+            font-size: 26px;
+            
+        }
     }
 
 `
@@ -151,6 +175,52 @@ const LaunchInitiated = styled.div`
         left: -410%;
         right: 200%;
         top: -65%; 
+    }
+    @media (max-width: 1024px) {
+        p {
+            left: -280%;
+            right: 150%;
+        }
+        &:after {
+            width: 100px;
+            left: -70%;
+        }
+    }
+
+    @media (max-width: 968px) {
+        img {
+            width: 120px;
+            height: 120px
+            z-index: 100;
+        }
+        &:before {
+            font-size: 16px;
+        }
+        p {
+            padding: 10px;
+            font-size: 14px;
+            left: -280%;
+            right: 150%;
+            top: -100%; 
+        }
+        &:after {
+            width: 100px;
+            left: -70%;
+        }
+    }
+    @media (max-width: 768px) {
+        &:after {
+            width: 9px;
+            height: 150px;
+            left: 48%;
+            bottom: -100%;
+        }
+        p {
+            padding: 10px;
+            left: -150%;
+            right: -150%;
+            top: 150%;
+        }
     }
 `
 
@@ -202,6 +272,55 @@ const Stacking = styled.div`
         right: -420%;
         top: -50%; 
     }
+
+    @media (max-width: 1024px) {
+        p {
+            
+            left: 150%;
+            right: -280%;
+            top: -50%; 
+        }
+        &:after {
+            width: 100px;
+        }
+    }
+    @media (max-width: 968px) {
+        margin-top: 80px;
+        img {
+            width: 120px;
+            height: 120px;
+        }
+        &:before {
+            font-size: 16px;
+        }
+        p {
+            padding: 10px;
+            font-size: 14px;
+            left: 150%;
+            right: -280%;
+            top: -50%; 
+        }
+        &:after {
+            width: 100px;
+        }
+    }
+    @media (max-width: 768px) {
+        margin-top: 300px;
+
+        &:after {
+            width: 9px;
+            height: 150px;
+            left: 47%;
+            top: 95%;
+        }
+    
+        p {
+            padding: 10px;
+            left: -150%;
+            right: -150%;
+            top: 150%; 
+        }
+    }
 `
 
 const MerchAndLiveEvents = styled(Stacking)`
@@ -231,6 +350,39 @@ const MerchAndLiveEvents = styled(Stacking)`
         left: -410%;
         right: 200%;
         top: -20%; 
+    }
+    @media (max-width: 1024px) {
+        p {
+            left: -280%;
+            right: 150%;
+        }
+        &:after {
+            width: 100px;
+            left: -70%;
+        }
+    }
+    @media (max-width: 768px) {
+        &:after {
+            width: 9px;
+            height: 150px;
+            left: 48%;
+            bottom: -100%;
+        }
+        p {
+            left: -150%;
+            right: -150%;
+            top: 150%;
+        }
+        &:after {
+            content: url("/images/Rectangle 66.svg");
+            position: absolute;
+            height: 0px;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            z-index: -1;
+        }
     }
 `
 
@@ -262,6 +414,33 @@ const CryptoBears = styled(Stacking)`
         right: -420%;
         top: -10%; 
     }
+    @media (max-width: 1024px) {
+        p {
+            left: 150%;
+            right: -280%;
+            top: -50%; 
+        }
+        &:after {
+            width: 100px;
+        }
+    }
+    @media (max-width: 768px) {
+        margin-top: 300px;
+
+        &:after {
+            width: 9px;
+            height: 150px;
+            left: 47%;
+            top: 95%;
+        }
+    
+        p {
+            padding: 10px;
+            left: -150%;
+            right: -150%;
+            top: 150%; 
+        }
+    }
 `
 
 const Metaverse = styled(Stacking)`
@@ -291,5 +470,29 @@ const Metaverse = styled(Stacking)`
         left: -410%;
         right: 200%;
         top: -20%; 
+    }
+    @media (max-width: 1024px) {
+        p {
+            left: -280%;
+            right: 150%;
+        }
+        &:after {
+            width: 100px;
+            left: -70%;
+        }
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 50px;
+        &:after {
+            width: 9px;
+            height: 150px;
+            left: 48%;
+            bottom: -100%;
+        }
+        p {
+            left: -150%;
+            right: -150%;
+            top: 150%;
+        }
     }
 `

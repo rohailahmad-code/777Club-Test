@@ -73,6 +73,11 @@ const Wrapper = styled.div`
     column-gap: 20px;
 
     padding: 100px 0px;
+
+    @media (max-width: 968px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 const LeftCards = styled.div`
     display: flex;
@@ -102,5 +107,15 @@ const Wrap = styled.div`
         height: 160px;
         margin-bottom: 10px;
         object-fit: cover;
+    }
+    @media (max-width: 1024px) {
+        img{
+            height: 140px;
+        }
+    }
+    @media (max-width: 968px) {
+        img{
+            height: 180px;
+        }
     }
 `

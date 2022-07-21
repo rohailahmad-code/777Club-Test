@@ -15,8 +15,9 @@ const Header = () => {
 export default Header;
 
 const Main = styled.main`
+  padding-bottom: 50px;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: url("/images/header-bg-img.png") center / cover no-repeat;
   z-index: -1;
 

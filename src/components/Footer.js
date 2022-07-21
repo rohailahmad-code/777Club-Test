@@ -73,6 +73,11 @@ const Wrap = styled.div`
         line-height: 1.7;
         margin-bottom: 20px;
     }
+    @media (max-width: 768px) {
+        p {
+            width: 90%;
+        }
+    } 
 
 `
 
@@ -80,6 +85,10 @@ const SocialLinks = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @media (max-width: 768px) {
+        gap: 20px;
+    } 
 `
 
 const FacebookIcon = styled.button`
@@ -90,6 +99,11 @@ const FacebookIcon = styled.button`
     background: none;
     border: none;
     outline: none;
+
+    @media (max-width: 768px) {
+        width: 54px;
+        height: 54px;
+    } 
 
 `
 
@@ -113,6 +127,10 @@ const Copyright = styled.div`
     justify-content: space-between;
 
     border-top: 1px solid #FFFFFF;
+
+    @media (max-width: 768px) {
+         width: 95%;
+    } 
 `
 
 const FooterLinks = styled.div`
@@ -121,4 +139,9 @@ const FooterLinks = styled.div`
         color: white;
         margin-left: 30px;
     }
+    @media (max-width: 768px) {
+        a {
+            margin-left: 10px;
+        }
+   }
 `

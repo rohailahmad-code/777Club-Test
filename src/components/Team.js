@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Team = () => {
   return (
-    <Container>
+    <Container id='Team'>
         <h1>Meet Our Founding Team</h1>
         <Wrapper>
 
@@ -44,8 +44,8 @@ const Team = () => {
                 <img src="/images/Group 182.png" alt="" />
                 <Content>
                     <p>https://www.artstation.com/vaxopipia 
-                       https://www.artstation.com/dazdud 
-                       https://www.artstation.com/bachibacho</p>
+                      <br/> https://www.artstation.com/dazdud 
+                      <br/> https://www.artstation.com/bachibacho</p>
                     <SocialIcons>
                         <InstagramButton>
                             <img src="/images/Group 81-1.svg" alt="" />
@@ -87,7 +87,9 @@ const Container = styled.main`
 const Wrapper = styled.div`
     padding: 50px 150px;
 
-    
+    @media (max-width: 1024px) {
+        padding: 50px 50px;
+    }    
 `
 
 const Wrap = styled.div`
@@ -102,7 +104,21 @@ const Wrap = styled.div`
     &:nth-child(2) {
         flex-direction: row-reverse;
         justify-content: space-between;
+
+        img {
+            margin-right: 0px;
+        }
     }
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        img {
+            margin-right: 0px;
+        }
+        &:nth-child(2) {
+            flex-direction: column;
+        }
+    } 
 `
 
 const Content = styled.div`
@@ -111,6 +127,24 @@ const Content = styled.div`
         font-family: GilroyLight;
         width:60%;
         line-height: 1.7;
+    }
+
+    @media (max-width: 968px) {
+        p {
+            width: 90%
+        }
+    }  
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            width: 100%;
+            text-align: center;
+        }
     }
 
 `

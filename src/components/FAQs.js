@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FAQs = () => {
+
+  
+
   return (
     <Container>
       <h1>Frequently Asked Questions</h1>
@@ -72,6 +75,13 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
+
+  @media (max-width: 1024px) {
+    padding: 100px 50px ;
+  } 
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 `
 
 const LeftWrapper = styled.div`
@@ -87,6 +97,14 @@ const Wrap = styled.div`
   p {
     line-height: 1.3;
   }
+  @media (max-width: 1024px) {
+    p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    
+  } 
+
 `
 
 const Button = styled.button`
@@ -104,6 +122,10 @@ const Button = styled.button`
   align-items: center;
 
   cursor: pointer;
+
+  @media (max-width: 1024px) {
+    font-size: 18px;
+  } 
 `
 
 

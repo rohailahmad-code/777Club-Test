@@ -41,7 +41,7 @@ export default Hero;
 
 
 const Container = styled.div`
-    height: calc(100Vh - 190px);
+    height: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -49,6 +49,13 @@ const Container = styled.div`
 
     padding: 0 150px;
     margin-top: 40px;
+
+    @media (max-width: 1024px) {
+        padding: 0 50px;
+    }
+    @media (max-width: 968px) {
+        flex-direction: column;
+    }
 `
 
 const LeftSide = styled.div`
@@ -88,6 +95,30 @@ const LeftSide = styled.div`
         }
     }
 
+    @media (max-width: 968px) {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+        h1{
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h1{
+            font-size: 50px;
+        }
+        span {
+            font-size: 25px;
+        }
+        a {
+    
+            button {
+                font-size: 16px;
+            }
+        }
+    }
 
 `
 
