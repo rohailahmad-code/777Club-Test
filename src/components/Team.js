@@ -68,6 +68,7 @@ export default Team;
 
 const Container = styled.main`
     margin: -5px;
+    padding: 50px 0;
     width: 100vw;
     height: 100%;
     background: url("/images/Group 183.png") center / cover no-repeat;

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import About from './About';
+import FAQs from './FAQs';
 import Header from './Header';
 import Roadmap from './Roadmap';
 import SneakPeaks from './SneakPeaks';
@@ -14,6 +15,7 @@ const Home = () => {
         <SneakPeaks />
         <Roadmap />
         <Team />
+        <FAQs />
     </Container>
   )
 }
