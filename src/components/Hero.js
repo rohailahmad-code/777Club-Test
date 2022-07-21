@@ -16,18 +16,18 @@ const Hero = () => {
 
             <Wrap>
                 <img src="/images/Group 100.png" alt="" />
-                <img className='top' src="/images/Group 100.png" alt="" />
-                <img src="/images/Group 100.png" alt="" />
+                <img src="/images/Group 103.png" alt="" />
+                <img src="/images/Group 106.png" alt="" />
             </Wrap>
             <Wrap className='top'>
-                <img src="/images/Group 100.png" alt="" />
-                <img className='top' src="/images/Group 100.png" alt="" />
-                <img src="/images/Group 100.png" alt="" />
+                <img src="/images/Group 101.png" alt="" />
+                <img  src="/images/Group 104.png" alt="" />
+                <img src="/images/Group 107.png" alt="" />
             </Wrap>
             <Wrap>
-                <img src="/images/Group 100.png" alt="" />
-                <img className='top' src="/images/Group 100.png" alt="" />
-                <img src="/images/Group 100.png" alt="" />
+                <img src="/images/Group 102.png" alt="" />
+                <img  src="/images/Group 105.png" alt="" />
+                <img src="/images/Group 108.png" alt="" />
             </Wrap>
 
             
@@ -76,7 +76,7 @@ const LeftSide = styled.div`
         button {
             background: transparent linear-gradient(99deg, #E600FF 0%, #2E2CF3 100%) 0% 0% no-repeat padding-box;
             font-size: 20px;
-            font-weight: 600;
+            font-family: GilroyBold;
             padding: 10px 20px;
             margin-top: 20px;
             border: none; 
@@ -92,25 +92,27 @@ const LeftSide = styled.div`
 `
 
 const RightSide = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, minmax(1fr));
-    row-gap: 0px;
+     
+    display: flex;
 
-    padding: 40px 0;
+    gap: 20px;
  
+    .top{
+        margin-top: 35px;
+    }
 `
 
 const Wrap = styled.div`
-    display: flex;
-    gap: 20px;
-    
+    display:flex;
+    flex-direction: column;
+
     img{
         height: 160px;
+        margin-bottom: 10px;
+        object-fit: cover;
     }
 
-    .top{
-        margin-top: 20px;
-    }
+    
     
 `
  

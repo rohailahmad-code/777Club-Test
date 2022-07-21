@@ -1,11 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import About from './About';
 import Header from './Header';
+import Roadmap from './Roadmap';
+import SneakPeaks from './SneakPeaks';
 
 const Home = () => {
   return (
     <Container>
         <Header />
+        <About />
+        <SneakPeaks />
+        <Roadmap />
     </Container>
   )
 }
@@ -14,8 +20,5 @@ export default Home;
 
 
 const Container = styled.main`
-        width: 100vw;
-        height: 100vh;
-        background: url("/images/header-bg-img.png") center / cover no-repeat;
-        z-index: -1;
+        
 `

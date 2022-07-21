@@ -44,8 +44,8 @@ const Nav = styled.nav`
 `
 
 const Logo = styled.img`
-    width: 114px;
-    height: 124px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
 `
 const NavMenu = styled.div`
@@ -54,7 +54,7 @@ const NavMenu = styled.div`
     }
 
     span {
-        font-size: 20px;
+        font-size: 18px;
         margin-right: 30px;
         color: #FFFFFF;
         letter-spacing: 0;
@@ -62,8 +62,8 @@ const NavMenu = styled.div`
 
     button{
         background: transparent linear-gradient(99deg, #E600FF 0%, #2E2CF3 100%) 0% 0% no-repeat padding-box;
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 18px;
+        font-family: GilroyBold;
         padding: 10px 20px;
         margin-left: 20px;
         border: none; 
