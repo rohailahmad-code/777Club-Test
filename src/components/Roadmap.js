@@ -54,7 +54,7 @@ const Roadmap = () => {
 export default Roadmap;
 
 const Container = styled.main`
-    padding: 100px 0px ;
+    padding: 200px 0px ;
     width: 100vw;
     height: 100%;
     background: url("/images/Group 179.png") center / cover no-repeat;

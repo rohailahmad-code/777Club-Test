@@ -4,6 +4,7 @@ import About from './About';
 import Header from './Header';
 import Roadmap from './Roadmap';
 import SneakPeaks from './SneakPeaks';
+import Team from './Team';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <About />
         <SneakPeaks />
         <Roadmap />
+        <Team />
     </Container>
   )
 }
