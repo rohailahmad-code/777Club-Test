@@ -56,6 +56,9 @@ const Container = styled.div`
     @media (max-width: 968px) {
         flex-direction: column;
     }
+    @media (max-width: 640px) {
+        padding: 0 20px;
+    }
 `
 
 const LeftSide = styled.div`
@@ -119,6 +122,20 @@ const LeftSide = styled.div`
             }
         }
     }
+    @media (max-width: 640px) {
+        h1{
+            font-size: 30px;
+        }
+        span {
+            font-size: 16px;
+        }
+        a {
+    
+            button {
+                font-size: 12px;
+            }
+        }
+    }
 
 `
 
@@ -130,6 +147,9 @@ const RightSide = styled.div`
  
     .top{
         margin-top: 35px;
+    }
+    @media (max-width: 640px) {
+        gap: 10px;
     }
 `
 
@@ -143,6 +163,11 @@ const Wrap = styled.div`
         object-fit: cover;
     }
 
+    @media (max-width: 640px) {
+        img{
+            height: 80px;
+        }
+    }
     
     
 `

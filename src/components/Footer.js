@@ -56,6 +56,9 @@ const Container = styled.main`
     z-index: -2;
     color: #FFFFFF;
 
+    @media (max-width: 640px) {
+        padding: 60px 0px 20px;
+    } 
 `
 
 const Wrap = styled.div`
@@ -79,6 +82,12 @@ const Wrap = styled.div`
         }
     } 
 
+    @media (max-width: 640px) {
+        p {
+            font-size: 14px;
+        }
+    } 
+
 `
 
 const SocialLinks = styled.div`
@@ -88,6 +97,10 @@ const SocialLinks = styled.div`
 
     @media (max-width: 768px) {
         gap: 20px;
+    }
+     
+    @media (max-width: 640px) {
+         margin-left: -20px;
     } 
 `
 
@@ -103,6 +116,11 @@ const FacebookIcon = styled.button`
     @media (max-width: 768px) {
         width: 54px;
         height: 54px;
+    } 
+    @media (max-width: 640px) {
+        width: 20px;
+        height: 20px;
+        margin-right: 40px;
     } 
 
 `
@@ -129,8 +147,14 @@ const Copyright = styled.div`
     border-top: 1px solid #FFFFFF;
 
     @media (max-width: 768px) {
-         width: 95%;
+        width: 95%;
     } 
+
+    @media (max-width: 640px) {
+        margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 const FooterLinks = styled.div`
@@ -143,5 +167,14 @@ const FooterLinks = styled.div`
         a {
             margin-left: 10px;
         }
-   }
+    }
+    @media (max-width: 640px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            margin-top: 20px;
+        }
+    }
 `

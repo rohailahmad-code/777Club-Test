@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 
 const FAQs = () => {
 
-  
+  const [isActive, setIsActive] = useState(true);
 
   return (
     <Container>
@@ -11,38 +11,38 @@ const FAQs = () => {
       <Wrapper>
 
         <LeftWrapper>
-          <Wrap>
-            <Button>What is the best way to collect NFT?</Button>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+          <Button onClick={() => setIsActive(!isActive)}>What is the best way to collect NFT?</Button>
+          <Wrap show={isActive}>
+            <p >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
             sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
             aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
             duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
             sanctus est</p>
           </Wrap>
+          <Button>What is the best way to collect NFT?</Button>
           <Wrap>
-            <Button>What is the best way to collect NFT?</Button>
           </Wrap>
+          <Button>How do you trade on Montono easily?</Button>
           <Wrap>
-            <Button>How do you trade on Montono easily?</Button>
           </Wrap>
          
         </LeftWrapper>
 
         <RightWrapper>
+          <Button>Why NFT Trading is so popular?</Button>
           <Wrap>
-            <Button>Why NFT Trading is so popular?</Button>
           </Wrap>
+          <Button>How do you trade on Montono easily?</Button>
           <Wrap>
-            <Button>How do you trade on Montono easily?</Button>
           </Wrap>
+          <Button>What is the best way to collect NFT?</Button>
           <Wrap>
-            <Button>What is the best way to collect NFT?</Button>
           </Wrap>
+          <Button>Why NFT Trading is so popular?</Button>
           <Wrap>
-            <Button>Why NFT Trading is so popular?</Button>
           </Wrap>
+          <Button>How do you trade on Montono easily?</Button>
           <Wrap>
-            <Button>How do you trade on Montono easily?</Button>
           </Wrap>
         </RightWrapper>
        
@@ -67,6 +67,12 @@ const Container = styled.main`
       font-family: GilroyBold;
       padding-top: 100px;
   }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 32px;
+    }
+  } 
 `
 
 const Wrapper = styled.div`
@@ -82,6 +88,9 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  @media (max-width: 640px) {
+    padding: 50px 20px ;
+  } 
 `
 
 const LeftWrapper = styled.div`
@@ -96,14 +105,16 @@ const RightWrapper = styled.div`
 const Wrap = styled.div`
   p {
     line-height: 1.3;
+    display: ${props => props.show ? 'flex' : 'none'};
   }
+  
   @media (max-width: 1024px) {
     p {
       font-size: 14px;
       line-height: 1.4;
     }
     
-  } 
+  }
 
 `
 
@@ -125,6 +136,9 @@ const Button = styled.button`
 
   @media (max-width: 1024px) {
     font-size: 18px;
+  } 
+  @media (max-width: 640px) {
+    font-size: 16px;
   } 
 `
 

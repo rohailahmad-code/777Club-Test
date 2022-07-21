@@ -82,6 +82,13 @@ const Container = styled.main`
         font-family: GilroyBold;
         padding-top: 100px;
     }
+    @media (max-width: 640px) {
+        padding: 20px 0;
+
+        h1 {
+            font-size: 32px;
+        }
+    } 
 `
 
 const Wrapper = styled.div`
@@ -89,7 +96,10 @@ const Wrapper = styled.div`
 
     @media (max-width: 1024px) {
         padding: 50px 50px;
-    }    
+    }   
+    @media (max-width: 640px) {
+        padding: 20px 20px;
+    }  
 `
 
 const Wrap = styled.div`
@@ -119,6 +129,12 @@ const Wrap = styled.div`
             flex-direction: column;
         }
     } 
+
+    @media (max-width: 640px) {
+        img {
+            width: 100%
+        }
+    }  
 `
 
 const Content = styled.div`
@@ -144,8 +160,15 @@ const Content = styled.div`
         p {
             width: 100%;
             text-align: center;
+            margin-top: 30px;
         }
     }
+
+    @media (max-width: 640px) {
+       p {
+        font-size: 14px;
+       }
+    } 
 
 `
 

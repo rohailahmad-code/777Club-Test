@@ -64,6 +64,13 @@ const Container = styled.main`
         padding-top: 100px;
         text-align: center;
     }
+
+    @media (max-width: 640px) {
+        h1 {
+            padding-top: 40px;
+            font-size: 32px;
+        }
+    }
 `
 
 const Wrapper = styled.div`
@@ -78,6 +85,9 @@ const Wrapper = styled.div`
         flex-direction: column;
         align-items: center;
     }
+    @media (max-width: 640px) {
+        padding: 50px 0px;
+    }
 `
 const LeftCards = styled.div`
     display: flex;
@@ -87,16 +97,22 @@ const LeftCards = styled.div`
     .top{
         margin-top: 35px;
     }
+    @media (max-width: 640px) {
+        gap: 10px;
+    }
 `
 
 const RightCards = styled.div`
     display: flex;
 
-        gap: 20px;
+    gap: 20px;
     
-        .top{
-            margin-top: 35px;
-        }
+    .top{
+        margin-top: 35px;
+    }
+    @media (max-width: 640px) {
+        gap: 10px;
+    }
 `
 
 const Wrap = styled.div`
@@ -116,6 +132,11 @@ const Wrap = styled.div`
     @media (max-width: 968px) {
         img{
             height: 180px;
+        }
+    }
+    @media (max-width: 640px) {
+        img{
+            height: 80px;
         }
     }
 `

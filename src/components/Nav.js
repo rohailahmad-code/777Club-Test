@@ -70,6 +70,9 @@ const Nav = styled.nav`
     @media (max-width: 1024px) {
          padding: 50px 50px 0;
     }
+    @media (max-width: 640px) {
+        padding: 20px 20px 0;
+    }
 `
 
 const Logo = styled.img`
@@ -81,11 +84,16 @@ const Logo = styled.img`
         width: 80px;
         height: 80px;
     }
+    @media (max-width: 640px) {
+        width: 50px;
+        height: 50px;
+    }
 `
 const NavMenu = styled.div`
     position: relative;
     a {
         text-decoration: none;
+        margin-top: 60px;
     }
 
     span {
@@ -137,8 +145,15 @@ const NavMenu = styled.div`
 
         background: linear-gradient( #e600fff5,#2f2cf3f5);
     }
-    a {
-        margin-top: 60px;
+   
+    @media (max-width: 640px) {
+        a {
+            
+            margin-top: 50px;
+        }
+        span {
+            font-size: 16px;
+        }
     }
 `
 
@@ -157,6 +172,11 @@ const HamburgerIcon = styled.div`
             width: 40px;
         }
     }
+    @media (max-width: 640px) {
+        img {
+            width: 30px;
+        }
+    }
 `
 
  const TimesIcon = styled.div`
@@ -165,7 +185,18 @@ const HamburgerIcon = styled.div`
     right: 5%;
     top: 5%;
 
+    img {
+        width: 50px;
+        cursor: pointer;
+    }
+
     @media (max-width: 968px) {
         display: flex;
     }
+    @media (max-width: 640px) {
+        img {
+            width: 30px;
+        }
+    }
+
  `

@@ -42,6 +42,9 @@ const Container = styled.main`
     @media (max-width: 968px) {
         padding: 50px 0px 0;
     }
+    @media (max-width: 640px) {
+        padding: 20px 0px 0;
+    }
 `
     
 const Wrapper = styled.div`
@@ -61,6 +64,10 @@ const Banner = styled.img`
     @media (max-width: 968px) {
         width: 80%;
         margin-top: 50px;
+    }
+    @media (max-width: 640px) {
+        width: 90%;
+        margin-top: 20px;
     }
 `
 
@@ -118,6 +125,22 @@ const Content = styled.div`
         a {
             button {
                 font-size: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        width: 90%;
+        h2 {
+            font-size: 32px; 
+        }
+        p{
+            font-size: 14px;
+        }
+        a {
+            button {
+                margin-bottom: 40px;
+                font-size: 14px;
             }
         }
     }

@@ -68,10 +68,6 @@ const RoadmapCircles = styled.div`
     align-items: center;
     flex-direction: column;
     position: relative;
-
-    @media (max-width: 768px) {
-
-    }
     
 `
 const RoadmapSphere = styled.div`
@@ -123,8 +119,16 @@ const RoadmapSphere = styled.div`
             z-index: 100;
         }
         &:before {
-            font-size: 26px;
-            
+            font-size: 26px;  
+        }
+    }
+    @media (max-width: 640px) {
+        img {
+            width: 180px;
+            height: 180px;
+        }
+        &:before {
+            font-size: 20px;  
         }
     }
 
@@ -219,6 +223,25 @@ const LaunchInitiated = styled.div`
             padding: 10px;
             left: -150%;
             right: -150%;
+            top: 150%;
+        }
+    }
+    @media (max-width: 640px) {
+        img {
+            width: 100px;
+            height: 100px
+        }
+        &:before {
+            font-size: 14px;
+        }
+        &:after {
+            width: 7px;
+        }
+        p {
+            font-size: 12px;
+            padding: 10px;
+            left: -70%;
+            right: -70%;
             top: 150%;
         }
     }
@@ -321,6 +344,18 @@ const Stacking = styled.div`
             top: 150%; 
         }
     }
+    @media (max-width: 640px) {
+        margin-top: 400px;
+
+        &:after {
+            width: 7px;
+        }
+    
+        p {
+            left: -50%;
+            right: -50%;
+        }
+    }
 `
 
 const MerchAndLiveEvents = styled(Stacking)`
@@ -384,6 +419,18 @@ const MerchAndLiveEvents = styled(Stacking)`
             z-index: -1;
         }
     }
+    @media (max-width: 640px) {
+        &:after {
+            width: 7px;
+        }
+        p {
+            left: -50%;
+            right: -50%;
+        }
+        &:after {
+           top: -20%;
+        }
+    }
 `
 
 const CryptoBears = styled(Stacking)`
@@ -441,6 +488,18 @@ const CryptoBears = styled(Stacking)`
             top: 150%; 
         }
     }
+    @media (max-width: 640px) {
+        margin-top: 400px;
+
+        &:after {
+            width: 7px;
+        }
+    
+        p {
+            left: -50%;
+            right: -50%;
+        }
+    }
 `
 
 const Metaverse = styled(Stacking)`
@@ -493,6 +552,17 @@ const Metaverse = styled(Stacking)`
             left: -150%;
             right: -150%;
             top: 150%;
+        }
+    }
+    @media (max-width: 640px) {
+        margin-top: 350px;
+        margin-bottom: 200px;
+        &:after {
+            width: 7px;
+        }
+        p {
+            left: -50%;
+            right: -50%;
         }
     }
 `
