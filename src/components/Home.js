@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import About from './About';
 import FAQs from './FAQs';
+import Footer from './Footer';
 import Header from './Header';
 import Roadmap from './Roadmap';
 import SneakPeaks from './SneakPeaks';
@@ -16,6 +17,7 @@ const Home = () => {
         <Roadmap />
         <Team />
         <FAQs />
+        <Footer />
     </Container>
   )
 }
