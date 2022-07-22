@@ -31,7 +31,7 @@ export default About;
 
 const Container = styled.main`
     padding: 100px 150px ;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background: url("/images/Group 184.png") center / cover no-repeat;
     z-index: -1;

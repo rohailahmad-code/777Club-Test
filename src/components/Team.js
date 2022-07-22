@@ -67,7 +67,7 @@ export default Team;
 
 
 const Container = styled.main`
-    margin: -5px;
+    margin-top: -5px;
     padding: 50px 0;
     width: 100vw;
     height: 100%;

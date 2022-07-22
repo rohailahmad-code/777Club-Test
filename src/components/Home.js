@@ -26,5 +26,5 @@ export default Home;
 
 
 const Container = styled.main`
-        
+        overflow-x: hidden;
 `
