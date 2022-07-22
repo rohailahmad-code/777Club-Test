@@ -16,7 +16,7 @@ const Hero = () => {
 
             <Wrap>
                 <img src="/images/Group 100.png" alt="" />
-                <img src="/images/Group 103.png" alt="" />
+                <img src="/images/Group 160.png" alt="" />
                 <img src="/images/Group 106.png" alt="" />
             </Wrap>
             <Wrap className='top'>

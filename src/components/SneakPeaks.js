@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import RightSide from './Hero'
 
 const SneakPeaks = () => {
   return (
@@ -10,7 +9,7 @@ const SneakPeaks = () => {
             <LeftCards>
             <Wrap>
                 <img src="/images/Group 100.png" alt="" />
-                <img src="/images/Group 103.png" alt="" />
+                <img src="/images/Group 160.png" alt="" />
                 <img src="/images/Group 106.png" alt="" />
             </Wrap>
             <Wrap className='top'>
@@ -27,7 +26,7 @@ const SneakPeaks = () => {
             <RightCards>
             <Wrap>
                 <img src="/images/Group 100.png" alt="" />
-                <img src="/images/Group 103.png" alt="" />
+                <img src="/images/Group 160.png" alt="" />
                 <img src="/images/Group 106.png" alt="" />
             </Wrap>
             <Wrap className='top'>
